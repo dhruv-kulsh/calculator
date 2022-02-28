@@ -1,0 +1,48 @@
+#container{
+    position: relative;  /* so that hour,min,sec will adjust according to it*/
+    height: 40vw;
+    width: 40vw;
+
+    background: url(clock.png) no-repeat center center/cover;
+    margin: auto;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background: #326e82;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+#hour, #minute, #second{
+    
+    position: absolute ;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1.8%;
+    height: 18%;
+    top: 33%;
+    left: 48.97%;
+}
+#minute{
+    width: 1.4%;
+    height: 29%;
+    top: 22%;
+    left: 49.2%;
+    opacity: 0.8;
+}
+#second{
+    width: 1%;
+    height: 38%;
+    top: 13%;
+    left: 49.4%;
+    opacity: 0.6;
+}
